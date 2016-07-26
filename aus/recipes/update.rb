@@ -4,5 +4,5 @@ execute "apt-get-update" do
 end
 
 execute "php5enmod-mcrypt" do
-  command "php5enmod-mcrypt"
+  command "php5enmod mcrypt"
 end
