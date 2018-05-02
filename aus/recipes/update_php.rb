@@ -1,6 +1,7 @@
 
 execute "apt-get-update-php" do
-  command "add-apt-repository ppa:ondrej/php5-5.6"
+  command "add-apt-repository ppa:ondrej/php"
+  command "add-apt-repository ppa:ondrej/apache2"
   command "apt-get update"
   command "apt-get install php5.6 php5.6-mbstring php5.6-mcrypt php5.6-mysql php5.6-xml -y"
   command "a2dismod php5"
