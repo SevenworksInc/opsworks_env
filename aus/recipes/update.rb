@@ -1,6 +1,6 @@
 # Run an update on the box.
 execute "apt-get-update" do
-  comamnd "apt-get install software-properties-common python-software-properties -y"
+  # comamnd "apt-get install software-properties-common python-software-properties -y"
   command "apt-add-repository ppa:ondrej/php5-5.6"
   command "apt-get update"
 end
