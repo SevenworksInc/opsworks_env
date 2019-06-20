@@ -1,4 +1,3 @@
-append_if_no_line "LimitRequestLine" do
-  path "/etc/apache2/apache2.conf"
-  line "LimitRequestLine 10000"
+open('/etc/apache2/apache2.conf', 'a') do |f|
+  f << "LimitRequestLine 10000\n"
 end
