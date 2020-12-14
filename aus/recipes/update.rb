@@ -17,3 +17,9 @@ end
 execute "php5enmod-mcrypt" do
   command "php5enmod mcrypt"
 end
+
+# Install php intl
+execute "php5-intl" do
+  command "sudo apt-get install php5-intl"
+end
+
