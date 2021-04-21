@@ -20,6 +20,6 @@ end
 
 # Install php intl
 execute "php5-intl" do
-  command "sudo apt-get install php5-intl"
+  command "sudo apt-get install php5-intl -y"
 end
 
